@@ -5,3 +5,7 @@
     - name: Import the example role
       import_role:
         name: hello
+
+    - name: Import the example role
+      import_tasks: /workspaces/webpack3/ansible/roles/docker/tasks/main.yaml
+      tags: installdocker

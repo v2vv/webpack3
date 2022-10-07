@@ -1,10 +1,10 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
-  entry: './src/app.jsx',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '/dist')
+    path: path.resolve(__dirname, '../dist')
   },
 
   resolve: {
@@ -13,7 +13,7 @@ module.exports = {
     // 解析目录时要使用的文件名
     mainFiles: ["index"],
 },
-
+  mode: 'development',
   module: {
     rules: [
         {
@@ -27,11 +27,11 @@ module.exports = {
             }
         },
         {
-            test: /\.html$/,
-            use: {
-            loader: 'html-loader'
-            }
-        }
+	        test: /\.html$/,
+	        use: {
+	          loader: 'html-loader'
+	        }
+	    }
     ]
   },
   plugins: [

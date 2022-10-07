@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack serve --config ./config/webpack.config.js"
+    "test": "webpack serve  --config ./config/webpack.config.js",
+    "built": "webpack --config ./config/webpack.config.js"
   },
   "author": "lvhongyuan",
   "license": "ISC",
@@ -19,7 +20,8 @@
     "babel-preset-mobx": "^2.0.0",
     "http-server": "^14.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",

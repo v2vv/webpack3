@@ -1,0 +1,201 @@
+2022-10-07 09:32:28,365 p=6840 u=codespace n=ansible | name1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2022-10-07 09:36:10,026 p=8311 u=codespace n=ansible | name1 | CHANGED | rc=0 >>
+hello
+Shared connection to 107.172.217.53 closed.
+
+
+2022-10-07 09:38:26,825 p=9466 u=codespace n=ansible | name1 | CHANGED | rc=0 >>
+hello
+Shared connection to 107.172.217.53 closed.
+
+
+2022-10-07 11:10:02,185 p=6366 u=codespace n=ansible | ERROR! 'raw' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:10:23,028 p=6592 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:12:02,624 p=7399 u=codespace n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: reck
+vars:
+^ here
+
+2022-10-07 11:12:25,639 p=7652 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:13:03,652 p=8025 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:13:52,664 p=8436 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Install Apache
+  ^ here
+
+2022-10-07 11:15:57,594 p=9341 u=codespace n=ansible | name1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2022-10-07 11:16:19,028 p=9670 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:20:24,359 p=11257 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:20:44,278 p=11525 u=codespace n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 6, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: ensure apache is at the latest version
+    command: "echo hello"
+    ^ here
+
+2022-10-07 11:21:08,346 p=11755 u=codespace n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 2 column 1 (char 1)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 7, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: ensure apache is at the latest version
+    command: "echo hello"
+    ^ here
+
+2022-10-07 11:22:06,999 p=12227 u=codespace n=ansible | ERROR! 'command' is not a valid attribute for a Play
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: reck
+  ^ here
+
+2022-10-07 11:23:00,452 p=12659 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 11:23:00,466 p=12659 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 11:23:10,880 p=12659 u=codespace n=ansible | ok: [name1]
+2022-10-07 11:23:10,907 p=12659 u=codespace n=ansible | TASK [ensure apache is at the latest version] ************************************************************************************************************
+2022-10-07 11:23:15,230 p=12659 u=codespace n=ansible | changed: [name1]
+2022-10-07 11:23:15,256 p=12659 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 11:23:15,257 p=12659 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 11:23:30,426 p=13062 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 11:23:30,440 p=13062 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 11:23:37,603 p=13062 u=codespace n=ansible | ok: [name1]
+2022-10-07 11:23:37,629 p=13062 u=codespace n=ansible | TASK [ensure apache is at the latest version] ************************************************************************************************************
+2022-10-07 11:23:41,924 p=13062 u=codespace n=ansible | changed: [name1]
+2022-10-07 11:23:41,951 p=13062 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 11:23:41,952 p=13062 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 11:43:08,052 p=20229 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 11:43:08,066 p=20229 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 11:43:17,917 p=20229 u=codespace n=ansible | ok: [name1]
+2022-10-07 11:43:17,944 p=20229 u=codespace n=ansible | TASK [ensure apache is at the latest version] ************************************************************************************************************
+2022-10-07 11:43:18,334 p=20229 u=codespace n=ansible | changed: [name1]
+2022-10-07 11:43:18,361 p=20229 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 11:43:18,361 p=20229 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 11:43:27,442 p=20504 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 11:43:27,456 p=20504 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 11:43:34,388 p=20504 u=codespace n=ansible | ok: [name1]
+2022-10-07 11:43:34,415 p=20504 u=codespace n=ansible | TASK [ensure apache is at the latest version] ************************************************************************************************************
+2022-10-07 11:43:34,810 p=20504 u=codespace n=ansible | changed: [name1]
+2022-10-07 11:43:34,858 p=20504 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 11:43:34,858 p=20504 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 12:01:27,283 p=27865 u=codespace n=ansible | Using /workspaces/webpack3/ansible/ansible.cfg as config file
+2022-10-07 12:01:27,381 p=27865 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 12:01:27,395 p=27865 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 12:01:37,287 p=27865 u=codespace n=ansible | ok: [name1]
+2022-10-07 12:01:37,314 p=27865 u=codespace n=ansible | TASK [ensure apache is at the latest version] ************************************************************************************************************
+2022-10-07 12:01:37,704 p=27865 u=codespace n=ansible | changed: [name1] => {"changed": true, "rc": 0, "stderr": "Shared connection to 107.172.217.53 closed.\r\n", "stderr_lines": ["Shared connection to 107.172.217.53 closed."], "stdout": "hello\r\n", "stdout_lines": ["hello"]}
+2022-10-07 12:01:37,730 p=27865 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 12:01:37,731 p=27865 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 12:22:48,050 p=3768 u=codespace n=ansible | Using /workspaces/webpack3/ansible/ansible.cfg as config file
+2022-10-07 12:22:48,151 p=3768 u=codespace n=ansible | PLAY [reck] **********************************************************************************************************************************************
+2022-10-07 12:22:48,165 p=3768 u=codespace n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************
+2022-10-07 12:22:58,000 p=3768 u=codespace n=ansible | ok: [name1]
+2022-10-07 12:22:58,032 p=3768 u=codespace n=ansible | TASK [hello : echo hello] ********************************************************************************************************************************
+2022-10-07 12:22:58,419 p=3768 u=codespace n=ansible | changed: [name1] => {"changed": true, "rc": 0, "stderr": "Shared connection to 107.172.217.53 closed.\r\n", "stderr_lines": ["Shared connection to 107.172.217.53 closed."], "stdout": "hello\r\n", "stdout_lines": ["hello"]}
+2022-10-07 12:22:58,460 p=3768 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
+2022-10-07 12:22:58,460 p=3768 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

@@ -3,5 +3,6 @@
     "activityBar.background": "#241686",
     "titleBar.activeBackground": "#321EBC",
     "titleBar.activeForeground": "#FBFAFE"
-  }
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": true
 }

@@ -1,0 +1,6 @@
+---
+- hosts: reck
+  remote_user: root
+  tasks:
+  roles:
+    - hello

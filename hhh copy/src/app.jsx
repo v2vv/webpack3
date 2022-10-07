@@ -3,10 +3,25 @@ import ReactDOM from 'react-dom/client';
 import { StyledEngineProvider } from '@mui/material/styles';
 import Demo from './demo';
 
-ReactDOM.createRoot(document.querySelector("#root")).render(
-  <React.StrictMode>
-    <StyledEngineProvider injectFirst>
+// ReactDOM.createRoot(document.querySelector("#root")).render(
+//   <React.StrictMode>
+//     <StyledEngineProvider injectFirst>
+//       <Demo />
+//     </StyledEngineProvider>
+//   </React.StrictMode>
+// );
+
+class App extends React.Component {
+  render() {
+    return (
       <Demo />
-    </StyledEngineProvider>
-  </React.StrictMode>
-);
+    //   <React.StrictMode>
+    //   <StyledEngineProvider injectFirst>
+    //     <Demo />
+    //   </StyledEngineProvider>
+    // </React.StrictMode>
+    )
+  }
+}
+
+export default App

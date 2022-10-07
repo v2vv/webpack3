@@ -199,3 +199,29 @@ The offending line appears to be:
 2022-10-07 12:22:58,419 p=3768 u=codespace n=ansible | changed: [name1] => {"changed": true, "rc": 0, "stderr": "Shared connection to 107.172.217.53 closed.\r\n", "stderr_lines": ["Shared connection to 107.172.217.53 closed."], "stdout": "hello\r\n", "stdout_lines": ["hello"]}
 2022-10-07 12:22:58,460 p=3768 u=codespace n=ansible | PLAY RECAP ***********************************************************************************************************************************************
 2022-10-07 12:22:58,460 p=3768 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 13:45:25,661 p=6591 u=codespace n=ansible | ERROR! 'name' is a required field for import_role.
+
+The error appears to be in '/workspaces/webpack3/ansible/playbooks.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Import the example role
+      ^ here
+
+2022-10-07 13:46:30,938 p=7226 u=codespace n=ansible | PLAY [reck] ************************************************************************************************************************************
+2022-10-07 13:46:30,953 p=7226 u=codespace n=ansible | TASK [Gathering Facts] *************************************************************************************************************************
+2022-10-07 13:46:41,143 p=7226 u=codespace n=ansible | ok: [name1]
+2022-10-07 13:46:41,172 p=7226 u=codespace n=ansible | TASK [hello : echo hello] **********************************************************************************************************************
+2022-10-07 13:46:41,566 p=7226 u=codespace n=ansible | changed: [name1]
+2022-10-07 13:46:41,612 p=7226 u=codespace n=ansible | PLAY RECAP *************************************************************************************************************************************
+2022-10-07 13:46:41,612 p=7226 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-10-07 13:47:01,179 p=7607 u=codespace n=ansible | Using /workspaces/webpack3/ansible/ansible.cfg as config file
+2022-10-07 13:47:01,290 p=7607 u=codespace n=ansible | PLAY [reck] ************************************************************************************************************************************
+2022-10-07 13:47:01,306 p=7607 u=codespace n=ansible | TASK [Gathering Facts] *************************************************************************************************************************
+2022-10-07 13:47:08,562 p=7607 u=codespace n=ansible | ok: [name1]
+2022-10-07 13:47:08,590 p=7607 u=codespace n=ansible | TASK [hello : echo hello] **********************************************************************************************************************
+2022-10-07 13:47:08,982 p=7607 u=codespace n=ansible | changed: [name1] => {"changed": true, "rc": 0, "stderr": "Shared connection to 107.172.217.53 closed.\r\n", "stderr_lines": ["Shared connection to 107.172.217.53 closed."], "stdout": "hello\r\n", "stdout_lines": ["hello"]}
+2022-10-07 13:47:09,024 p=7607 u=codespace n=ansible | PLAY RECAP *************************************************************************************************************************************
+2022-10-07 13:47:09,025 p=7607 u=codespace n=ansible | name1                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

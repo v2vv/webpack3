@@ -1,2 +1,7 @@
-  - name: Debian install docker
-    raw: curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+- name: Offical Script install docker
+  raw: curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+  tags: install docker
+
+- name: docker run Portainer
+  raw: docker run 
+  tags: install docker

@@ -1,11 +1,26 @@
 ---
-- hosts: reck
+- name: Hello
+  hosts: reck
   remote_user: root
   tasks:
-    - name: Import the example role
-      import_role:
+    - name: Import the example
+      ansible.builtin.import_role:
         name: hello
 
     - name: Import the example role
-      import_tasks: /workspaces/webpack3/ansible/roles/docker/tasks/main.yaml
+      ansible.builtin.import_tasks: /workspaces/webpack3/ansible/roles/docker/tasks/main.yaml
       tags: installdocker
+
+
+- name: Hello
+  hosts: reck
+  remote_user: root
+  tasks:
+    - name: Import the example
+      ansible.builtin.import_role:
+        name: hello
+
+    - name: Import the example role
+      ansible.builtin.import_tasks: /workspaces/webpack3/ansible/roles/docker/tasks/main.yaml
+      tags: installdocker
+      

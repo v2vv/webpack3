@@ -13,6 +13,8 @@
     name: docker
   tags: install
 
+
+
 - name: Create Mysql container
   docker_container:
     name: mysql
@@ -35,3 +37,7 @@
 - name: Install docker and some dependencies
   raw: "docker logs nginx4 "
   tags: logs
+
+- name: Run the equivalent of "apt-get clean" as a separate step
+  apt:
+    clean: yes

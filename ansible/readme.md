@@ -2,3 +2,11 @@
 
 
 `ansible-playbook playbooks.yaml -v ` 
+
+apt updte
+
+apt-get -y --force-yes install curl
+
+cd ansible
+
+ansible-playbook playbooks.yaml -v
